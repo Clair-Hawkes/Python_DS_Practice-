@@ -7,3 +7,13 @@ def multiple_letter_count(phrase):
         >>> multiple_letter_count('Yay')
         {'Y': 1, 'a': 1, 'y': 1}
     """
+    # case sensitive!
+    # comprehension!!!!!!!
+
+    freqs = {}
+
+    for char in phrase:
+        curr = freqs[char] or 0
+        freqs[char] = curr + 1
+    
+    return freqs
