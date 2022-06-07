@@ -19,3 +19,16 @@ def partition(lst, fn):
         >>> partition(["hi", None, 6, "bye"], is_string)
         [['hi', 'bye'], [None, 6]]
     """
+    # comprehension
+    # loop for item in lst
+    # if T/F when item is passed to fn
+        # create two sublists --> sublst1[T], sublst2[F]
+    # both sublists placed inside final list to be returned
+
+    truthy = [item for item in lst if fn(item)]
+
+    falsy = [item for item in lst if not fn(item)]
+
+    return [truthy, falsy]
+
+    # zip --> takes list 2 item lists, get list of first item get list of second item
