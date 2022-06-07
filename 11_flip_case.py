@@ -17,8 +17,8 @@ def flip_case(phrase, to_swap):
 
 
     for char in phrase:
-        if char.lower == to_swap.lower:
-            print(char,char.isupper())
+        if char.lower() == to_swap.lower():
+            # print(char,char.isupper())
             if char.isupper():
                 empty_string += char.lower()
             else:
