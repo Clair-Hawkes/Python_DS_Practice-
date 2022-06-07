@@ -13,7 +13,15 @@ def multiple_letter_count(phrase):
     freqs = {}
 
     for char in phrase:
-        curr = freqs[char] or 0
-        freqs[char] = curr + 1
-    
+        # curr = freqs[char] or 0
+        # freqs[char] = curr + 1
+
+        if char in freqs:
+            freqs[char] +=1
+        else:
+            freqs[char] = 1
+
     return freqs
+
+
+    # key in dictionary
