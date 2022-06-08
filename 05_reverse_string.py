@@ -12,6 +12,10 @@ def reverse_string(phrase):
     # turn back into string str()
     # return that
     # letters = phrase.split("")
-    letters = [char for char in phrase]
-    letters.reverse()
-    return "".join(letters)
+    # letters = [char for char in phrase]
+    # letters.reverse()
+    # return "".join(letters)
+
+    return phrase[::-1]
+
+
